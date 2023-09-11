@@ -17,7 +17,7 @@ void loop() {
   sensor = analogRead(4) * 5000.0 / 1023.0;
   Temperatura = sensor / 10;
 
-  lcd.print(analogRead(4));
+  lcd.print(Temperatura);
   delay(3000);
 
 
