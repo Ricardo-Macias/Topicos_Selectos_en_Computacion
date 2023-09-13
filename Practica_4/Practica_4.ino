@@ -11,7 +11,7 @@ void setup() {
 }
 
 void loop() {
-  lcd.clear()
+  lcd.clear();
   lcd.setCursor(0,0);
   lcd.print("Temperatura");
   lcd.setCursor(0,1);
@@ -19,7 +19,7 @@ void loop() {
   sensor = analogRead(4) * 5000.0 / 1023;
   Temperatura = sensor / 10;
 
-  lcd.print(analogRead(4),1);
+  lcd.print(Temperatura);
   lcd.print(" C");
   delay(3000);
 
