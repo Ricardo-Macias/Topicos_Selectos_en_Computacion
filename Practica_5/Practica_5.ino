@@ -8,10 +8,12 @@ DallasTemperature sensors(&ourWire);
 LiquidCrystal lcd(12,11,7,6,5,4);
 
 void setup() {
-  delay(1000);
-  Serial.begin(9600);
   lcd.begin(16,2);
+  lcd.print("Arduino");
+  Serial.begin(9600);
   sensors.begin();
+  delay(2000);
+  lcd.clear();
 }
 
 void loop() {
