@@ -12,6 +12,11 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  sensors.requestTemperatures();
+
+  Serial.print(sensors.getTempCByIndex(0));
+  Serial.println(" Grados centigrados");
+
+  delay(1000)
 
 }
