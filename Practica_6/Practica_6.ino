@@ -1,7 +1,7 @@
 #include <Keypad.h> //Importar libreria 
 #include <LiquidCrystal.h>
 
-LiquidCrystal lcd(13,12,11,10,9,8);
+LiquidCrystal lcd(8,9,10,11,12,13);
 
 const byte Row = 4; //Numero de filas del teclado
 const byte Column = 4; //Numero de columnas del teclado
