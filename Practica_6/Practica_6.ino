@@ -1,4 +1,7 @@
 #include <Keypad.h> //Importar libreria 
+#include <LiquidCrystal.h>
+
+LiquidCrystal lcd(13,12,11,10,9,8);
 
 const byte Row = 4; //Numero de filas del teclado
 const byte Column = 4; //Numero de columnas del teclado
@@ -18,12 +21,16 @@ Keypad teclado = Keypad(makeKeymap(keys), pinesRow, pinesColumn, Row, Column);
 char tecla;
 
 void setup() {
+  lcd.begin(16,2);
   Serial.begin(9600);
-
+  lcd.setCursor(0,0);
 }
 
 void loop() {
   tecla = teclado.getKey();
-  Serial.print(tecla);
+  if (tecla){
+    Serial.println(tecla);
+    lcd.print(tecla);
+  }
   delay(1000);
 }
