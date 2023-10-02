@@ -16,6 +16,18 @@ void receiveEvent(int bytes){
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  
+  if (x==0){
+    digitalWrite(LED,HIGH);
+    delay(200);
+    digitalWrite(LED, LOW);
+    delay(200);
+  }
 
+  if (x==){
+    digitalWrite(LED, HIGH);
+    delay(400);
+    digitalWrite(LED,LOW);
+    delay(400);
+  }
 }
