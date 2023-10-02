@@ -7,7 +7,7 @@ int x = 0;
 void setup() {
   pinMode(LED, OUTPUT);
   Wire.begin(9); //Arranca el bus I2C como esclavo en la direcciob 9.
-  Wire.onReceive(receiveEvent) //Conecta una funcion para disparar cuando se recibe algo.
+  Wire.onReceive(receiveEvent); //Conecta una funcion para disparar cuando se recibe algo.
 
 }
 
@@ -24,7 +24,7 @@ void loop() {
     delay(200);
   }
 
-  if (x==){
+  if (x==3){
     digitalWrite(LED, HIGH);
     delay(400);
     digitalWrite(LED,LOW);
