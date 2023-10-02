@@ -8,6 +8,11 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  Wire.beginTransmission(9);
+  Wire.write(x);
+  Wire.endTransmission();
+  x++;
+  if(x>5)x=0;
+  delay(500);
 
 }
