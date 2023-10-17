@@ -58,7 +58,7 @@ void loop() {
   var = "";
 
   lcd.clear();
-  lcd.print("Operacion: ");
+  lcd.print("1.+ 2.-  3.* 4./");
 
   do {
     option = teclado.getKey();
