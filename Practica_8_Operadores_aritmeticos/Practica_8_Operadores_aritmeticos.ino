@@ -24,7 +24,6 @@ float x, y;
 
 void setup() {
   lcd.begin(16,2);
-  Serial.begin(9600);
   lcd.print("ARDUINO");
   delay(1500);
 }
@@ -98,6 +97,8 @@ void loop() {
   }while(option == NO_KEY);
   
   var = "";
+  digito_1 = "";
+  digito_2 = "";
   delay(3000);
 
 }
