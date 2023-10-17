@@ -18,7 +18,7 @@ byte pinesColumn[Column] = {3,2,1,0};
 Keypad teclado = Keypad(makeKeymap(keys),pinesRow, pinesColumn, Row, Column);
 
 char var, option;
-String digito_1, digito_2;
+String digito_1, digito_2, result;
 float x, y;
 
 
@@ -66,42 +66,38 @@ void loop() {
     delay(50);
     switch(option){
       case '1':
-        lcd.print(digito_1);
-        lcd.print(" + ");
-        lcd.print(digito_2);
-        lcd.print(" = ");
+        lcd.clear();
+        result = digito_1 + " + " + digito_2 + " = ";
+        lcd.print(result);
         lcd.setCursor(0,1);
         lcd.print( x + y);
         break;
       case '2':
-        lcd.print(digito_1);
-        lcd.print(" + ");
-        lcd.print(digito_2);
-        lcd.print(" = ");
+        lcd.clear();
+        result = digito_1 + " - " + digito_2 + " = ";
+        lcd.print(result);
         lcd.setCursor(0,1);
         lcd.print( x - y);
         break;
       case '3':
-        lcd.print(digito_1);
-        lcd.print(" + ");
-        lcd.print(digito_2);
-        lcd.print(" = ");
+        lcd.clear();
+        result = digito_1 + " * " + digito_2 + " = ";
+        lcd.print(result);
         lcd.setCursor(0,1);
         lcd.print( x * y);
         break;
       case '4':
-        lcd.print(digito_1);
-        lcd.print(" + ");
-        lcd.print(digito_2);
-        lcd.print(" = ");
-        lcd.setCursor(0,1);
+        lcd.clear();
+        result = digito_1 + " / " + digito_2 + " = ";
+        lcd.print(result);
         lcd.print( x / y);
         break;
       default:
         break;
     }
   }while(option == NO_KEY);
-
+  
+  var = "";
   delay(3000);
 
 }
