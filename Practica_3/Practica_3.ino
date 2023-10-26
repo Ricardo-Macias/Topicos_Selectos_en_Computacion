@@ -12,10 +12,10 @@ void setup() {
 
 void loop() {
   lcd.clear();
-  lcd.setCursor(0,0);  //Cursor en la posocopm 0 en el lcd
+  lcd.setCursor(0,0);  //Cursor en la posicion 0 en el lcd
   lcd.print("Probador de pilas");
   lcd.setCursor(0,1);
-  lcd.print(analogRead(0)*5.00/1024); //Comvertir a Volage
+  lcd.print(analogRead(0)*5.00/1023.00); //Comvertir a Volage
   lcd.print("V=>");
   lcd.setCursor(8,1); 
   
@@ -35,5 +35,5 @@ void loop() {
   else{
     lcd.print("");
   }
-  delay(250);
+  delay(500);
 }

@@ -24,12 +24,13 @@ void setup() {
   lcd.begin(16,2);
   Serial.begin(9600);
   lcd.setCursor(0,0);
+  lcd.print("Practica 6");
+  lcd.setCursor(0, 1);
 }
 
 void loop() {
   tecla = teclado.getKey();
   if (tecla){
-    Serial.println(tecla);
     lcd.print(tecla);
   }
   delay(1000);
