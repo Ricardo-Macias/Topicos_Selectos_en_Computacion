@@ -11,7 +11,7 @@ void setup() {
   pinMode(echo, INPUT);
 
   Serial.begin(9600);
-  lcd.begin(2,16);
+  lcd.begin(16,2);
   lcd.print("Practica 12");
   delay(3000);
   lcd.clear();
@@ -29,7 +29,7 @@ void loop() {
   value = pulseIn(echo,HIGH);
   delay(100);
 
-  distancia = (value/2)/29.1; //value * 10 / 292 / 2;
+  distancia = (value/2)/29.1;
 
   if(distancia < 500){
     lcd.print(distancia/100);
