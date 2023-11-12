@@ -1,6 +1,8 @@
 #include <LiquidCrystal.h>
 #include <Keypad.h>
+#include <RTClib.h>
 
+RTC_DS1307 rtc;
 
 LiquidCrystal lcd(13,12,11,10,9,8);
 const byte Row = 4;
@@ -22,6 +24,12 @@ String Encender, Apagado;
 
 void setup() {
   lcd.begin(16,2);
+  Serial.begin(9600);
+  if (! rtc.begin()){
+    Serial.print("No se encontro el RTC");
+    while(1);
+  }
+  rtc.adjust(DateTime(__DATE__,__TIME__));
   lcd.print("Practica 14");
   delay(1000);
   lcd.clear();
@@ -30,7 +38,7 @@ void setup() {
 
 void loop() {
 
-  if(HoraEncender == 0 && HoraApagar == 0){
+  if(HoraEncendido == 0 && HoraApagado == 0){
 
     lcd.setCursor(0, 0);
     lcd.print("Hora Encendido: ");
@@ -63,7 +71,29 @@ void loop() {
     HoraApagado = Apagado.toInt();
   }
   else{
+    lcd.clear();
+    DateTime fecha = rtc.now();
 
+    lcd.setCursor(0, 0);
+    lcd.print("Fecha: ");
+    lcd.print(fecha.day());
+    lcd.print("/");
+    lcd.print(fecha.month());
+    lcd.print("/");
+    lcd.print(fecha.year());
+
+    lcd.setCursor(0, 1);
+    lcd.print("Hora: ");
+    lcd.print(fecha.hour());
+    lcd.print(":");
+    lcd.print(fecha.minute());
+    lcd.print(":");
+    if (fecha.second() < 10){
+      lcd.print("0");
+    }
+    lcd.print(fecha.second());
+
+    delay(1000);
   }
 
 }
