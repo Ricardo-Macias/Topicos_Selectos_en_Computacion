@@ -19,8 +19,8 @@ byte pinRow[Row] = {7,6,5,4};
 byte pinColumn[Column] = {3,A2,A1,0};
 Keypad teclado = Keypad(makeKeymap(keys), pinRow, pinColumn, Row, Column);
 
-int HoraEncendido=0, HoraApagado=0;
-String Encender, Apagado;
+int HoraEncendido=0, HoraApagado=0, MinutoEncendido=0, MinutoApagado=0;
+String Encender, Apagado,minEncender, minApagado;
 
 void setup() {
   lcd.begin(16,2);
@@ -53,8 +53,22 @@ void loop() {
         Encender += HoraEncendido - 48; 
       }
     }
+    lcd.clear();
+
+    lcd.setCursor(0, 0);
+    lcd.print("Min Encendido: ");
+    lcd.setCursor(0,1);
+
+    while(MinutoEncendido != '*'){
+    MinutoEncendido = teclado.getKey();
+      if (MinutoEncendido != '*' && MinutoEncendido != NULL){
+        lcd.print(MinutoEncendido-48);
+        minEncender += MinutoEncendido - 48; 
+      }
+    }
 
     lcd.clear();
+    MinutoEncendido = minEncender.toInt();
     HoraEncendido = Encender.toInt();
 
     lcd.setCursor(0, 0);
@@ -69,6 +83,20 @@ void loop() {
       }
     }
 
+    lcd.clear();
+    lcd.setCursor(0, 0);
+    lcd.print("Min Apagado: ");
+    lcd.setCursor(0,1);
+    
+    while(MinutoApagado != '*'){
+    MinutoApagado = teclado.getKey();
+      if (MinutoApagado != '*' && MinutoApagado != NULL){
+        lcd.print(MinutoApagado-48);
+        minApagado += MinutoApagado - 48; 
+      }
+    }
+
+    MinutoApagado = minApagado.toInt();
     HoraApagado = Apagado.toInt();
   }
   else{
@@ -94,15 +122,19 @@ void loop() {
     }
     lcd.print(fecha.second());
 
-    if(HoraEncendido == fecha.hour()){
+    if(HoraEncendido == fecha.hour() &&  MinutoEncendido == fecha.minute()){
       digitalWrite(2,HIGH);
       delay(1000);
     }
-    else{
+    else if(HoraApagado == fecha.hour() && MinutoApagado == fecha.minute()){
       digitalWrite(2,LOW);
+      delay(1000);
+    }
+    else {
+      delay(1000);
     }
 
-    delay(1000);
+    
   }
 
 }
