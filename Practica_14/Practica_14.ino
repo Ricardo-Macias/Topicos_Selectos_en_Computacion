@@ -16,7 +16,7 @@ char keys[Row][Column] = {
 };
 
 byte pinRow[Row] = {7,6,5,4};
-byte pinColumn[Column] = {3,2,1,0};
+byte pinColumn[Column] = {3,A2,A1,0};
 Keypad teclado = Keypad(makeKeymap(keys), pinRow, pinColumn, Row, Column);
 
 int HoraEncendido=0, HoraApagado=0;
@@ -25,6 +25,7 @@ String Encender, Apagado;
 void setup() {
   lcd.begin(16,2);
   Serial.begin(9600);
+  pinMode(2,OUTPUT);
   if (! rtc.begin()){
     Serial.print("No se encontro el RTC");
     while(1);
@@ -92,6 +93,14 @@ void loop() {
       lcd.print("0");
     }
     lcd.print(fecha.second());
+
+    if(HoraEncendido == fecha.hour()){
+      digitalWrite(2,HIGH);
+      delay(1000);
+    }
+    else{
+      digitalWrite(2,LOW);
+    }
 
     delay(1000);
   }
