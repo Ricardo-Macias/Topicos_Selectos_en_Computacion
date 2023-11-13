@@ -1,12 +1,20 @@
 #include <Servo.h>
 
-
+Servo servoMotor;
 void setup() {
-  // put your setup code here, to run once:
-
+  Serial.begin(9600);
+  servoMotor.attach(9); //Pin de coneccion
+  servoMotor.write(0);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  for(int i=0;i<=180;i++){
+    servoMotor.write(i);
+    delay(25);
+  }
+  for(int i=179; i>0;i--){
+    servoMotor.write(i);
+    delay(25);
+  }
 
 }
