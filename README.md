@@ -1,4 +1,4 @@
-# Topicos_Selectos_en_Computacion
+# Topicos Selectos en Computacion
 
 ## Practica 1:
 <p>
@@ -8,4 +8,10 @@
   conectado en el pin 13.
 
   ![](https://github.com/Ricardo-Macias/Topicos_Selectos_en_Computacion/blob/main/Practica_1/Practica_1.png)
+</p>
+
+## Practica 2:
+<p>
+  Lee una entrada analogica en el pin A0, la convierte a tension e imprime el 
+  valor del voltaje en el Monitor Serie.
 </p>
