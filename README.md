@@ -28,7 +28,13 @@
 
 ## Practica 4:
 <p>
-  En esta practica se crear un programa para checar la temperatura actual y que la lectura se muestre cada 3 
+  En esta practica se crea un programa para checar la temperatura actual y que la lectura se muestre cada 3 
   segundos en el LCD en grados centígrados, para lo cual se utiliza un LM35. <br>
   Usaremos A4 (entrada analógica 4) para leer el valor de la variable temperatura.
+</p>
+
+## Practica 5:
+<p>
+  En esta practica se crea un programa para checar la temperatura actual, pero esta vez se utiliza un sensor de 
+  temperatura DS18B20 y el valor se muestra en una pantalla lcd.
 </p>
