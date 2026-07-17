@@ -47,12 +47,26 @@ En esta practica se crea un programa para revisar el nivel de tensión de una pi
 
 ### Diagrama de conexiones
 
-## Practica 4:
-<p>
-  En esta practica se crea un programa para checar la temperatura actual y que la lectura se muestre cada 3 
-  segundos en el LCD en grados centígrados, para lo cual se utiliza un LM35. <br>
-  Usaremos A4 (entrada analógica 4) para leer el valor de la variable temperatura.
-</p>
+![](https://github.com/Ricardo-Macias/Topicos_Selectos_en_Computacion/blob/main/Practica_3/Practica_3.png)
+
+## Practica 4: Sensores de temperatura cpn salida a LCD
+
+En esta practica se creara un programa que revise cual es la temperatura actual y que la lectura sea mostrada cada 3 segundos en el LCD en grados centígrados.
+
+Usaremos A4 (entrada analogica 4) para leer valores de la variable ttemperatura.
+
+### Materiales
+- Arduino.
+- LCD.
+- Potenciómetro.
+- LM35.
+
+### Librerias
+- LiquidCrystal
+
+### Diagrama de conexiones
+
+
 
 ## Practica 5:
 <p>
