@@ -66,10 +66,22 @@ Usaremos A4 (entrada analogica 4) para leer valores de la variable ttemperatura.
 
 ### Diagrama de conexiones
 
+![](https://github.com/Ricardo-Macias/Topicos_Selectos_en_Computacion/blob/main/Practica_4/Practica_4.png)
 
+## Practica 5: Sensor de temperatura DS18B20 con LCD
 
-## Practica 5:
-<p>
-  En esta practica se crea un programa para checar la temperatura actual, pero esta vez se utiliza un sensor de 
-  temperatura DS18B20 y el valor se muestra en una pantalla lcd.
-</p>
+En esta practica utilizaremos el sensor de temperatura DS18B20 que es un dispositivo que se comunica de forma digital. Cuenta con tres terminales: Vcc, GND y el pin Data. Este sensor utiliza comunicación por protocolo serial digital **OneWire**. Esté protocolo de comunicacion permite enviar y recibir datos utilizados un solo cable. A diferencia de otros, que utilizan dos omas lineas de comunicación digital.
+
+### Materiales
+- Arduino.
+- LCD.
+- Potenciómetro.
+- Sensor DS18B20.
+- Resistencia 4.7 K.
+
+### Librerias
+- LiquidCrystal.
+- OneWire.
+- DallasTemperature.
+
+### Diagrama de conexiones
