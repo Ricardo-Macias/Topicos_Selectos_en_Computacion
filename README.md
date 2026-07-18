@@ -2,6 +2,10 @@
 
 Este repositorio contiene las actividades realizadas durante la materia de Topicos Selectos en Computacion
 
+## Practicas
+- [Practica 1: Entradas y salidas digitales](#practica-1-entradas-y-salidas-digitales)
+- [Practica 2: Lectura de la tensión analógica](#practica-2-lectura-de-la-tensión-analógica)
+
 ## Practica 1: Entradas y salidas digitales
 
 En esta preactica inicial se utiliza un push button en el pin 7, en arreglo de pull-up, de atl manera que cuando lo presiones nos proporcione un 0 y cuando lo sueltes nos proporcione un 1, o si lo ponemos en pull-down el funcionamiento seria, cuando lo presiones dara un 1 y cuando lo sueltes 0.
@@ -106,4 +110,21 @@ Ocupamos que los datos se actualicen cada segundo, para que asi lo mantenga en e
 
 ### Diagrama de conexiones
 
+![](https://github.com/Ricardo-Macias/Topicos_Selectos_en_Computacion/blob/main/Practica_6/Practica_6.png)
 
+## Practica 7: Arduino Master Slave
+
+En esta practica utilizaremos el circuito Inter-Inotegrado o I2C, este es un protocolo que normalmente se utiliza para la comunicación entre componentes de placas base en cámaras y en cualquier sustema electrónico embebido. En la practica realizaremos un bus I2C usando dos arduinos.
+
+Programaremos un arduino maestro para que ordene al otro Arduino esclavo que parpadee si LED incorporado una o dos veces dependiendo del valor recibido.
+
+### Materiales
+- 2 Arduinos.
+- 2 Resistencias de 1K.
+- 1 Resistencia de 220 ohms.
+- 1 LED.
+
+### Librerias 
+- Wire
+
+### Diagrama de conexiones
