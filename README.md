@@ -10,9 +10,9 @@ Este repositorio contiene las actividades realizadas durante la materia de Topic
 - [Practica 5: Sensor de temperatura DS18B20 con LCD](#practica-5-sensor-de-temperatura-ds18b20-con-lcd)
 - [Practica 6: Decodificación de teclado con salida a LCD](#practica-6-decodificación-de-teclado-con-salida-a-lcd)
 - [Practica 7: Arduino Master Slave](#practica-7-arduino-master-slave)
-- [Practica 8: Arduino Master Slave con malla de potencia](#practica-8-arduino-master-slave-con-malla-de-potencia)
-- [Practica 9: Operadores aritméticos en Arduino](#practica-9-operadores-aritméticos-en-arduino)
-- [Practica 10: Alarma con sensores de movimiento PIR y buzzer](#practica-10-alarma-con-sensores-de-movimiento-pir-y-buzzer)
+- [Practica 8: Operadores aritméticos en Arduino](#practica-8-operadores-aritméticos-en-arduino)
+- [Practica 9: Alarma con sensores de movimiento PIR y buzzer](#practica-9-alarma-con-sensores-de-movimiento-pir-y-buzzer)
+- [Practica 10:](#practica-10)
 - [Practica 11: Módulo de sensor de detección de latido cardíaco](#practica-11-módulo-de-sensor-de-detección-de-latido-cardíaco)
 - [Practica 12: Sensor ultrasónico HC-SR04 y LCD](#practica-12-sensor-ultrasónico-hc-sr04-y-lcd)
 - [Practica 13: Real Time Clock (RTC) con LCD](#practica-13-real-time-clock-rtc-con-lcd)
@@ -135,7 +135,7 @@ Programaremos un arduino maestro para que ordene al otro Arduino esclavo que par
 ### Materiales
 - 2 Arduinos.
 - 2 Resistencias de 1K.
-- 1 Resistencia de 220 ohms.
+- 1 Resistencia de 330 ohms.
 - 1 LED.
 
 ### Librerias 
@@ -143,11 +143,46 @@ Programaremos un arduino maestro para que ordene al otro Arduino esclavo que par
 
 ### Diagrama de conexiones
 
-## Practica 8: Arduino Master Slave con malla de potencia
+![](https://github.com/Ricardo-Macias/Topicos_Selectos_en_Computacion/blob/main/Practica_7_Master_Slave/Practica_7.png)
 
-## Practica 9: Operadores aritméticos en Arduino
+## Practica 8: Operadores aritméticos en Arduino
 
-## Practica 10: Alarma con sensores de movimiento PIR y buzzer
+Se desarrolla un codigo para una calculadora artimetica, es decir, solo va ahacer las operaciones básicas de suma , resta, division y multiplicación, estas funciones las tiene arduino incluidas como primitivas , no se requiere de una libreria especial para trabajar con ellas.
+
+### Materiales
+- Arduino.
+- LCD.
+- Potenciómetro.
+- Keypad 4x4.
+
+### Librerias 
+- LiquidCrystal
+- Keypad
+
+### Diagrama de conexiones
+
+![](https://github.com/Ricardo-Macias/Topicos_Selectos_en_Computacion/blob/main/Practica_6/Practica_6.png)
+
+## Practica 9: Alarma con sensores de movimiento PIR y buzzer
+
+En esta practica se implementara una larma que se active si dettecta movimiento y que genere una serie de tonos de la lista de nostas musicales en el buzzer.
+
+La función a utilizar para generación de tonos es:
+- tone(pin, frecuencia)
+- noTone(pin)
+
+### Materiales
+- Arduino.
+- Led.
+- Resistencia de 330 ohms.
+- Sensor de movimiento PIR.
+- Buzzer 13MM 9 KHZ
+
+### Diagrama de conexiones
+
+![](https://github.com/Ricardo-Macias/Topicos_Selectos_en_Computacion/blob/main/Practica_9_Alarma_con_sensor_de_movimiento_PIR_y_buzzer/Practica_9.png)
+
+## Practica 10:
 
 ## Practica 11: Módulo de sensor de detección de latido cardíaco
 
