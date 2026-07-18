@@ -5,6 +5,20 @@ Este repositorio contiene las actividades realizadas durante la materia de Topic
 ## Practicas
 - [Practica 1: Entradas y salidas digitales](#practica-1-entradas-y-salidas-digitales)
 - [Practica 2: Lectura de la tensión analógica](#practica-2-lectura-de-la-tensión-analógica)
+- [Practica 3: Probador de baterías con salida a LCD](#practica-3-probandor-de-baterías-con-salida-a-lcd)
+- [Practica 4: Sensores de temperatura con salida a LCD](#practica-4-sensores-de-temperatura-con-salida-a-lcd)
+- [Practica 5: Sensor de temperatura DS18B20 con LCD](#practica-5-sensor-de-temperatura-ds18b20-con-lcd)
+- [Practica 6: Decodificación de teclado con salida a LCD](#practica-6-decodificación-de-teclado-con-salida-a-lcd)
+- [Practica 7: Arduino Master Slave](#practica-7-arduino-master-slave)
+- [Practica 8: Arduino Master Slave con malla de potencia](#practica-8-arduino-master-slave-con-malla-de-potencia)
+- [Practica 9: Operadores aritméticos en Arduino](#practica-9-operadores-aritméticos-en-arduino)
+- [Practica 10: Alarma con sensores de movimiento PIR y buzzer](#practica-10-alarma-con-sensores-de-movimiento-pir-y-buzzer)
+- [Practica 11: Módulo de sensor de detección de latido cardíaco](#practica-11-módulo-de-sensor-de-detección-de-latido-cardíaco)
+- [Practica 12: Sensor ultrasónico HC-SR04 y LCD](#practica-12-sensor-ultrasónico-hc-sr04-y-lcd)
+- [Practica 13: Real Time Clock (RTC) con LCD](#practica-13-real-time-clock-rtc-con-lcd)
+- [Practica 14: Control On/Off temporizador por RTC y teclado con carga de CA](#practica-14-control-onoff-temporizador-por-rtc-y-teclado-con-carga-de-ca)
+- [Practica 15: Servomotor](#practica-15-servomotor)
+- [Practica 16: Fotorresistencia (LDR)](#practica-16-fotorresistencia-ldr)
 
 ## Practica 1: Entradas y salidas digitales
 
@@ -32,7 +46,7 @@ En esta practica se leera una entrada analogica en el pin A0, la convierte a ten
 ### Diagrama de conexiones
 ![](https://github.com/Ricardo-Macias/Topicos_Selectos_en_Computacion/blob/main/Practica_2/Practica_2.png)
 
-## Practica 3: Probandor de baterás con salida a LCD
+## Practica 3: Probandor de baterías con salida a LCD
 
 En esta practica se crea un programa para revisar el nivel de tensión de una pila AA o AAA. Se pretende conectar una pila entre la entrada analógica 0 y tierra, leer el valor de tensión y mostrar en la pantalla LCD el estado de la pila:
   - Perfecto (>1.40V).
@@ -53,7 +67,7 @@ En esta practica se crea un programa para revisar el nivel de tensión de una pi
 
 ![](https://github.com/Ricardo-Macias/Topicos_Selectos_en_Computacion/blob/main/Practica_3/Practica_3.png)
 
-## Practica 4: Sensores de temperatura cpn salida a LCD
+## Practica 4: Sensores de temperatura con salida a LCD
 
 En esta practica se creara un programa que revise cual es la temperatura actual y que la lectura sea mostrada cada 3 segundos en el LCD en grados centígrados.
 
@@ -128,3 +142,21 @@ Programaremos un arduino maestro para que ordene al otro Arduino esclavo que par
 - Wire
 
 ### Diagrama de conexiones
+
+## Practica 8: Arduino Master Slave con malla de potencia
+
+## Practica 9: Operadores aritméticos en Arduino
+
+## Practica 10: Alarma con sensores de movimiento PIR y buzzer
+
+## Practica 11: Módulo de sensor de detección de latido cardíaco
+
+## Practica 12: Sensor ultrasónico HC-SR04 y LCD
+
+## Practica 13: Real Time Clock (RTC) con LCD
+
+## Practica 14: Control On/Off temporizador por RTC y teclado con carga de CA
+
+## Practica 15: Servomotor
+
+## Practica 16: Fotorresistencia (LDR)
