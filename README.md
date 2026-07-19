@@ -186,12 +186,103 @@ La función a utilizar para generación de tonos es:
 
 ## Practica 11: Módulo de sensor de detección de latido cardíaco
 
+En esta practica se diseara un programa mediante el cial se pueda monitorear el ritmo cardiaco de una persona, mediante el sensor de pulso de ritmo cardiaco  yque nos indique las pulsaciones del corazon por minuto y que visualicemos dicho valor en el monitor serial del IDE de arduino.+
+
+### Materiales
+- Arduino.
+- Sensor de pulso ritmo cardíaco para dedo.
+
 ## Practica 12: Sensor ultrasónico HC-SR04 y LCD
+
+En esta practica se creara un programa capaz de medir que tan lejos se encunetra un objeto, mostrar la distancia en el LCD.
+
+### Materiales
+- Arduino.
+- LCD.
+- Potenciometro.
+- Sensor ultrasonido HC-SR04.
+
+### Librerias:
+- LiquidCrystal
+
+### Diagrama de conexiones
+
+![](https://github.com/Ricardo-Macias/Topicos_Selectos_en_Computacion/blob/main/Practica_12_Sensor_ultrasonico/Practica_12.png)
 
 ## Practica 13: Real Time Clock (RTC) con LCD
 
+En esta practica se hara uso de un circuito integrado de bajo consumo que mantiene la hora actual.
+
+### Materiales
+- Arduino.
+- LCD.
+- Potenciometro.
+- RTC.
+
+### Librerias
+- RTClib
+- LiquidCrystalu  
+
 ## Practica 14: Control On/Off temporizador por RTC y teclado con carga de CA
+
+Se diseñar un programa para el arduino, en el cual el LCD nos pida introducir la
+hora de encendido (ON) de la carga de CA (foco) la cual introduciremos por medio del
+teclado.
+
+Después en el LCD se nos pedirá introducir la hora de apagado (OFF) de la carga de CA
+(foco) la cual introduciremos mediante el teclado.
+
+Después de introducir la hora de encendido y apagado, el LCD debe de estar mostrando
+la hora actual del RTC, para así poder apreciar cuando encienda la carga de CA (foco) y
+que sea la hora que se introdujo y también observar que se cumple con la hora de
+apagado.
+
+### Materiales
+- Arduino.
+- LCD.
+- Potenciometro.
+- RTC.
+- Keypad 4x4.
+- Malla de potencia.
+
+### Librerias
+- LiquidCrstal
+- Keypad
+- RTClib
+
+### Diagrama de conexiones
+
+![](https://github.com/Ricardo-Macias/Topicos_Selectos_en_Computacion/blob/main/Practica_14/Practica_14.png)
 
 ## Practica 15: Servomotor
 
+En esta practica se desarrollara un codigo que nos permita controlar un servomotor con arduino.
+
+### Materiales
+- Arduino.
+- Servomotor.
+
+### Librerias
+- Servo
+
+### Diagrama de conexiones
+
+
+![](https://github.com/Ricardo-Macias/Topicos_Selectos_en_Computacion/blob/main/Practica_15_Servomotor/Practica_15.png)
+
 ## Practica 16: Fotorresistencia (LDR)
+
+En esta practica lo que vamos a hacer es conectar este divisor de tensión en un pin analógico del arduino (A0), y vamos
+a desarrollar un sistema que detecte si hay luz o si esta oscuro, es decir vamos a tapar la LDR o a dejarla
+expuesta a la luz, cuando la tapemos simularemos que no hay luz y se activará una carga de corriente alterna
+(foco) y cuando destapemos la LDR es porque si hay luz y el foco debe de apagar,
+
+### Materiales
+- Arduino.
+- Malla de potencia.
+- LDR
+- Resistencia 10K
+
+### Diagrama de conexiones
+
+![](https://github.com/Ricardo-Macias/Topicos_Selectos_en_Computacion/blob/main/Practica_16_LDR/Practica_16.png)
