@@ -192,6 +192,14 @@ En esta practica se diseara un programa mediante el cial se pueda monitorear el 
 - Arduino.
 - Sensor de pulso ritmo cardíaco para dedo.
 
+### Conexiones
+
+| **Sensor de pulso ritmo cardíaco para dedo** | **Arduimo** |
+|:--------------------------------------------:|:-----------:|
+| +                                            | 5V          |
+| -                                            | GND         |
+| S                                            | A0          |
+
 ## Practica 12: Sensor ultrasónico HC-SR04 y LCD
 
 En esta practica se creara un programa capaz de medir que tan lejos se encunetra un objeto, mostrar la distancia en el LCD.
@@ -221,7 +229,16 @@ En esta practica se hara uso de un circuito integrado de bajo consumo que mantie
 
 ### Librerias
 - RTClib
-- LiquidCrystalu  
+- LiquidCrystal
+
+### Conexiones
+
+| **RTC** | **Arduino** |
+|:-------:|:-----------:|
+| 5V      | 5V          |
+| GND     | GND         |
+| SCL     | A5          |
+| SDA     | A4          |
 
 ## Practica 14: Control On/Off temporizador por RTC y teclado con carga de CA
 
