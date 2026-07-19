@@ -12,7 +12,7 @@ Este repositorio contiene las actividades realizadas durante la materia de Topic
 - [Practica 7: Arduino Master Slave](#practica-7-arduino-master-slave)
 - [Practica 8: Operadores aritméticos en Arduino](#practica-8-operadores-aritméticos-en-arduino)
 - [Practica 9: Alarma con sensores de movimiento PIR y buzzer](#practica-9-alarma-con-sensores-de-movimiento-pir-y-buzzer)
-- [Practica 10:](#practica-10)
+- [Practica 10: Arduino Master Slave con malla de potencia](#practica-10-arduino-master-slave-con-malla-de-potencia)
 - [Practica 11: Módulo de sensor de detección de latido cardíaco](#practica-11-módulo-de-sensor-de-detección-de-latido-cardíaco)
 - [Practica 12: Sensor ultrasónico HC-SR04 y LCD](#practica-12-sensor-ultrasónico-hc-sr04-y-lcd)
 - [Practica 13: Real Time Clock (RTC) con LCD](#practica-13-real-time-clock-rtc-con-lcd)
@@ -182,7 +182,24 @@ La función a utilizar para generación de tonos es:
 
 ![](https://github.com/Ricardo-Macias/Topicos_Selectos_en_Computacion/blob/main/Practica_9_Alarma_con_sensor_de_movimiento_PIR_y_buzzer/Practica_9.png)
 
-## Practica 10:
+## Practica 10: Arduino Master Slave con malla de potencia
+
+En esta practica vamos a trabajar con un optotriac y un triac, usamos la practica 7, la dejamos montada y cableamos en el protoboard la
+malla de potencia y conectamos con el pin 2 del arduino slave, de esta manera los pulsos digitales del Slave; accionaran la carga alimentada con 117 VCA.
+
+### Materiales
+- 2 Arduinos.
+- 2 Resistencias de 1K.
+- 1 Resistencia de 330 ohms.
+- 1 LED.
+- Malla de potencia.
+
+### Librerias
+- Wire
+
+### Diagrama de conexiones
+
+![](https://github.com/Ricardo-Macias/Topicos_Selectos_en_Computacion/blob/main/Practica_7_Master_Slave/Practica_10.png)
 
 ## Practica 11: Módulo de sensor de detección de latido cardíaco
 
