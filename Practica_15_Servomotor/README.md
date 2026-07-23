@@ -13,4 +13,4 @@ En esta practica se desarrollara un codigo que nos permita controlar un servomot
 
 ### Diagrama de conexiones
 
-![](Practica_15_Servomotor/Practica_15.png)
+![](/Practica_15_Servomotor/Practica_15.png)

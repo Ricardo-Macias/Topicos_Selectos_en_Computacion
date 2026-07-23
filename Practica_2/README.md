@@ -13,4 +13,4 @@ En esta practica no se utilizaron librerias
 
 ## Diagrama de conexiones
 
-![](Practica_2/Practica_2.png)
+![](/Practica_2/Practica_2.png)

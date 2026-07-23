@@ -18,4 +18,4 @@ Ocupamos que los datos se actualicen cada segundo, para que asi lo mantenga en e
 
 ## Diagrama de conexiones
 
-![](Practica_6/Practica_6.png)
+![](/Practica_6/Practica_6.png)

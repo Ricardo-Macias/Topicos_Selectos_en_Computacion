@@ -19,4 +19,4 @@ En esta practica se crea un programa para revisar el nivel de tensión de una pi
 
 ## Diagrama de conexiones
 
-![](Practica_3/Practica_3.png)
+![](/Practica_3/Practica_3.png)

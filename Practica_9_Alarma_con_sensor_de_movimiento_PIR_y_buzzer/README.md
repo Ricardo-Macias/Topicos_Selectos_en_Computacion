@@ -20,4 +20,4 @@ En esta practica no se utilizaron librerias
 
 ## Diagrama de conexiones
 
-![](Practica_9_Alarma_con_sensor_de_movimiento_PIR_y_buzzer/Practica_9.png)
+![](/Practica_9_Alarma_con_sensor_de_movimiento_PIR_y_buzzer/Practica_9.png)

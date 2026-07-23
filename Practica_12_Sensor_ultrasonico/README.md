@@ -15,4 +15,4 @@ En esta practica se creara un programa capaz de medir que tan lejos se encunetra
 
 ## Diagrama de conexiones
 
-![](Practica_12_Sensor_ultrasonico/Practica_12.png)
+![](/Practica_12_Sensor_ultrasonico/Practica_12.png)

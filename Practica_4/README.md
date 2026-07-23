@@ -17,4 +17,4 @@ Usaremos A4 (entrada analogica 4) para leer valores de la variable ttemperatura.
 
 ## Diagrama de conexiones
 
-![](Practica_4/Practica_4.png)
+![](/Practica_4/Practica_4.png)

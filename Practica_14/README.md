@@ -29,4 +29,4 @@ apagado.
 
 ## Diagrama de conexiones
 
-![](Practica_14/Practica_14.png)
+![](/Practica_14/Practica_14.png)

@@ -18,4 +18,4 @@ En esta practica no se utilizaron librerias
 
 ## Diagrama de conexiones
 
-![](https://github.com/Ricardo-Macias/Topicos_Selectos_en_Computacion/blob/main/Practica_16_LDR/Practica_16.png)
+![](/Practica_16_LDR/Practica_16.png)

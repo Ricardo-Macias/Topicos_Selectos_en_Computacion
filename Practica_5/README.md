@@ -18,4 +18,4 @@ En esta practica utilizaremos el sensor de temperatura DS18B20 que es un disposi
 
 ### Diagrama de conexiones
 
-![](Practica_5/Practica_5.png)
+![](/Practica_5/Practica_5.png)

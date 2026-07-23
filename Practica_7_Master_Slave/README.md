@@ -17,4 +17,4 @@ Programaremos un arduino maestro para que ordene al otro Arduino esclavo que par
 
 ## Diagrama de conexiones
 
-![](Practica_7_Master_Slave/Practica_7.png)
+![](/Practica_7_Master_Slave/Practica_7.png)

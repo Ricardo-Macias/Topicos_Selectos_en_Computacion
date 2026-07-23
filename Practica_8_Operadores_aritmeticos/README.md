@@ -16,4 +16,4 @@ Se desarrolla un codigo para una calculadora artimetica, es decir, solo va ahace
 
 ## Diagrama de conexiones
 
-![](Practica_6/Practica_6.png)
+![](/Practica_6/Practica_6.png)
