@@ -4,6 +4,8 @@ Este repositorio contiene las actividades realizadas durante la materia de Topic
 
 ## Practicas
 - [Practica 1: Entradas y salidas digitales](#practica-1-entradas-y-salidas-digitales)
+  - [Materiales](#materiales)
+  - [Diagrama de conexiones](#diagrama-de-conexiones)
 - [Practica 2: Lectura de la tensión analógica](#practica-2-lectura-de-la-tensión-analógica)
 - [Practica 3: Probador de baterías con salida a LCD](#practica-3-probandor-de-baterías-con-salida-a-lcd)
 - [Practica 4: Sensores de temperatura con salida a LCD](#practica-4-sensores-de-temperatura-con-salida-a-lcd)
