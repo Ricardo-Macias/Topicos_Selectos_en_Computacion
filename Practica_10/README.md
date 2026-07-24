@@ -16,5 +16,5 @@ malla de potencia y conectamos con el pin 2 del arduino slave, de esta manera lo
 
 ## Diagrama de conexiones
 
-![](/Practica_7_Master_Slave/Practica_10.png)
+![](/Practica_10/Practica_10.png)
 
